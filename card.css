@@ -1,0 +1,16 @@
+.card-back{
+    transform: scaleX(-1);
+}
+
+.flip-vertical {
+    animation: flip-vertical 0.5s forwards;
+  }
+  
+  @keyframes flip-vertical {
+    from {
+      transform: perspective(400px) rotateX(0deg);
+    }
+    to {
+      transform: perspective(400px) rotateX(90deg);
+    }
+  }
